@@ -54,3 +54,5 @@ I am a MERN Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEm
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=uditmehra80&layout=compact&theme=vision-friendly-dark)](https://github.com/uditmehra80)
 
 ![Udit's GitHub stats](https://github-readme-stats.vercel.app/api?username=uditmehra80&show_icons=true&theme=radical)
+
+![Udit's GitHub stats](https://github-readme-stats.vercel.app/api?username=uditmehra80&count_private=true)
