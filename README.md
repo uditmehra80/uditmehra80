@@ -51,3 +51,4 @@ I am a MERN Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEm
 ### :fire: My Stats :
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=uditmehra80&theme=dark&background=000000)](https://github.com/uditmehra80)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=uditmehra80&layout=compact&theme=vision-friendly-dark)](https://github.com/uditmehra80)
