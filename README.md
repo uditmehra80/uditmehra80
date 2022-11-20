@@ -1,1 +1,13 @@
-<iframe src="https://giphy.com/embed/M9gbBd9nbDrOTu1Mqx" width="382" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx">via GIPHY</a></p>
+Hi there 👋
+
+🔭 I’m a Full stack Web & Mobile App Developer
+
+🌱 currently, I'm sharpening my skills and installing new knowledge from this world using 8086 Microprocessor.
+
+💬 Ask me about MERN || ReactNative Development or any tech relative stuff
+
+👯 My Portfolio is Here
+
+📫 How to reach me: @linkdin
+
+😄 Pronouns: Faruk
