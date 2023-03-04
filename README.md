@@ -56,4 +56,4 @@ I am a MERN Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEm
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=uditmehra80&hide=php&langs_count=4)](https://github.com/uditmehra80/github-readme-stats)
 
 ### 🔗: Usefull links :
-- : <a href="https://state-updates.vercel.app/">Array cheat<a/>.
+-  <a href="https://state-updates.vercel.app/">Array cheat<a/>.
