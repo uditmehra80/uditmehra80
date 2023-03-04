@@ -1,7 +1,5 @@
 # JavaScript Interview Questions & Answers
 
-JavaScript-Interview-Questions/actions).
-
 ---
 
 ### Table of Contents
