@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //The Object.hasOwn() static method returns true
+      //if the specified object has the indicated property
+      //as its own property. If the property is inherited,
+      // or does not exist, the method returns false.
+      const object1 = {
+        prop: "exists",
+        hey: "bro",
+      };
+
+      console.log(Object.hasOwn(object1, "prop"));
+      // Expected output: true
+
+      console.log(Object.hasOwn(object1, "toString"));
+      // Expected output: false
+
+      console.log(Object.hasOwn(object1, "undeclaredPropertyValue"));
+      // Expected output: false
+
+      console.log(Object.hasOwn(object1, "hey"));
+
+      //Iterating over the properties of an object
+      const example = { foo: true, bar: true };
+      for (const name of Object.keys(example)) {
+        console.log(name);
+      }
+
+      const example2 = { foo: true, bar: true, name: "hey" };
+      for (const item in example2) {
+        console.log(item);
+        if (Object.hasOwn(example2, "name")) {
+          console.log("name property exists");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>hasOwn</h1>
+  </body>
+</html>

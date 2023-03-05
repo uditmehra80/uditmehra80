@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  push() - adds one or more elements to the end of an array.
+      let a = [1, 2, 3];
+      a.push(4);
+      console.log(a); // [1, 2, 3, 4]
+
+      //pop() - removes the last element from an array.
+      let arr5 = [1, 2, 3];
+      arr5.pop();
+      console.log(arr5); // [1, 2]
+
+      //shift() - removes the first element from an array.
+      //   let arr = [1, 2, 3];
+      //   arr.shift();
+      //   console.log(arr); // [2, 3]
+
+      //unshift() - adds one or more elements to the beginning of an array.
+      //   let arr = [1, 2, 3];
+      //   arr.unshift(0);
+      //   console.log(arr); // [0, 1, 2, 3]
+
+      //splice() - adds or removes elements from an array at a specified index.
+      //   let arr = [1, 2, 3];
+      //   arr.splice(1, 1, 4); // remove 1 element at index 1 and add 4
+      //   console.log(arr); // [1, 4, 3]
+
+      //slice() - returns a new array containing a portion of the original array.
+      //   let arr = [1, 2, 3];
+      //   let newArr = arr.slice(1, 2);
+      //   console.log(newArr); // [2]
+
+      //indexOf() - returns the first index of a specified element in an array.
+      //   let arr = [1, 2, 3, 2];
+      //   console.log(arr.indexOf(2)); // 1
+
+      //forEach() - executes a provided function once for each array element.
+      //   let arr = [1, 2, 3];
+      //   arr.forEach(function (element) {
+      //     console.log(element);
+      //   });
+      // 1
+      // 2
+      // 3
+
+      //map() - creates a new array with the results of
+      // calling a provided function on every element in
+      //the original array.
+      //   let arr = [1, 2, 3];
+      //   let newArr = arr.map(function (element) {
+      //     return element * 2;
+      //   });
+      //   console.log(newArr); // [2, 4, 6]
+
+      //CONCAT
+      const array1 = ["a", "b", "c"];
+      const array2 = ["d", "e", "f"];
+      const array3 = array1.concat(array2);
+
+      console.log(array3);
+      // Expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+      const num1 = [1, 2, 3];
+      const num2 = [4, 5, 6];
+      const num3 = [7, 8, 9];
+
+      const numbers = num1.concat(num2, num3);
+
+      console.log(numbers);
+      // results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      const arr = ["a", "b", "c"];
+
+      const array4 = [1, 30, 39, 29, 10, 13];
+      console.log(
+        array4.every((currentValue) => {
+          console.log(currentValue);
+          return currentValue < 40;
+        })
+      );
+      // Expected output: true
+
+      //The filter() method creates a shallow copy of a portion of a given array, filtered down
+      //to just the elements from the given array that pass the test implemented by the provided function.
+
+      // Arrow function
+      //   filter((element) => {
+      //     /* … */
+      //   });
+      //   filter((element, index) => {
+      //     /* … */
+      //   });
+      //   filter((element, index, array) => {
+      //     /* … */
+      //   });
+
+      const words = [
+        "spray",
+        "limit",
+        "elite",
+        "exuberant",
+        "destruction",
+        "present",
+      ];
+      const result = words.filter((word) => word.length > 6);
+      console.log(result);
+      // Expected output: Array ["exuberant", "destruction", "present"]
+
+      const fruits = ["apple", "banana", "grapes", "mango", "orange"];
+
+      /**
+       * Filter array items based on search criteria (query)
+       */
+      function filterItems(arr, query) {
+        return arr.filter((el) =>
+          el.toLowerCase().includes(query.toLowerCase())
+        );
+      }
+
+      console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
+
+      //The find() method returns the first element in the provided array that satisfies the provided testing function.
+      // If no values satisfy the testing function, undefined is returned.
+      const arrayOfN = [5, 12, 8, 130, 44];
+
+      const found = arrayOfN.find((element) => element > 10);
+
+      console.log(found);
+      // Expected output: 12
+
+      //
+    </script>
+    <h1>Array methods</h1>
+  </body>
+</html>

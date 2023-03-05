@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //The Object.entries() static method returns an array of a given object's
+      // own enumerable string-keyed property key-value pairs.
+
+      const object1 = {
+        a: "somestring",
+        b: 42,
+      };
+
+      console.log(Object.entries(object1));
+
+      for (const [key, value] of Object.entries(object1)) {
+        console.log(`${key}: ${value}`);
+      }
+
+      Object.entries(object1).forEach(([key, value]) => {
+        console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+      });
+
+      var arr = [
+        ["a", "somestring"],
+        ["b", 42],
+      ];
+      console.log(arr);
+
+      for (const [key, value] of arr) {
+        console.log(`${key}: ${value}`);
+      }
+
+      console.log(Object.entries("Udit"));
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // The Object.getOwnPropertyNames() static method
+      //returns an array of all properties
+      //(including non-enumerable properties except for those which use Symbol)
+      // found directly in a given object.
+      const object1 = {
+        a: 1,
+        b: 2,
+        c: 3,
+      };
+
+      console.log(Object.getOwnPropertyNames(object1));
+      // Expected output: Array ["a", "b", "c"]
+      console.log(Object.keys(object1));
+
+      const obj = { 0: "a", 1: "b", 2: "c" };
+
+      Object.getOwnPropertyNames(obj).forEach((val, idx, array) => {
+        console.log(`${val} -> ${obj[val]}`);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //
+
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      console.log(person.fullName());
+
+      ////////////////////////////////
+
+      const o1 = {};
+      o1.constructor === Object; // true
+
+      const o2 = new Object();
+      o2.constructor === Object; // true
+
+      const a1 = [];
+      a1.constructor === Array; // true
+
+      const a2 = new Array();
+      a2.constructor === Array; // true
+
+      const n = 3;
+      n.constructor === Number; // true
+
+      /////////////////////////////////
+      // The Object.assign() static method copies all enumerable
+      // own properties from one or more source objects to a
+      // target object. It returns the modified target object.
+      const target = { a: 1, b: 2 };
+      const source = { b: 4, c: 5 };
+
+      const returnedTarget = Object.assign(target, source);
+
+      console.log(target);
+      // Expected output: Object { a: 1, b: 4, c: 5 }
+
+      console.log(returnedTarget === target);
+
+      const o11 = { a: 1, b: 1, c: 1 };
+      const o22 = { b: 2, c: 2 };
+      const o33 = { c: 3 };
+
+      const obj = Object.assign({}, o11, o22, o33);
+      // The properties are overwritten by other objects
+      // that have the same properties later in
+      // the parameters order.
+      console.log(obj); // { a: 1, b: 2, c: 3 }
+
+      //
+    </script>
+  </head>
+  <body>
+    <h1>Key object console</h1>
+  </body>
+</html>
