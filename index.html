@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let customers = {
+        c1: 101,
+        c2: 102,
+        c3: 103,
+      };
+
+      const f1 = function (...data) {
+        console.log(data);
+        const arr = [];
+        data[0].map((n) => {
+          if (n > 5) {
+            arr.push(n);
+          }
+        });
+        console.log(arr);
+      };
+
+      f1([1, 3, 8, 5, 8, 9, 6]);
+
+      // c1 = {
+      //   c1: 101,
+      // };
+
+      // function getAllFormattedDatesOfPreviousThreeYears() {
+      //   const now = new Date();
+      //   const previousYears = [];
+
+      //   for (let i = 0; i < 3; i++) {
+      //     const previousYear = now.getFullYear() - i;
+      //     for (let j = 0; j < 12; j++) {
+      //       const previousMonthDate = new Date(previousYear, j, 1);
+      //       const lastDayOfMonth = new Date(previousYear, j + 1, 0).getDate();
+      //       for (let k = 1; k <= lastDayOfMonth; k++) {
+      //         const previousDate = new Date(previousYear, j, k);
+      //         previousYears.push(previousDate.toISOString());
+      //       }
+      //     }
+      //   }
+
+      //   return previousYears;
+      // }
+      // const previousFormattedDates = getAllFormattedDatesOfPreviousThreeYears();
+      // let Data = [];
+
+      // previousFormattedDates.map((date) => {
+      //   Data.push({
+      //     createdAt: date,
+      //     total_visit_per_day: 0,
+      //     total_duration_per_day: 0,
+      //   });
+      // });
+
+      // console.log(Data);
+    </script>
+  </body>
+</html>

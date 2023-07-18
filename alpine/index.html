@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <h1 style="display: flex; justify-content: center">Alpine.js</h1>
+
+    <div
+      x-data="{
+        showModel : true,
+        firstName : 'udit'
+    }"
+    >
+      <div x-show="showModel">
+        <h1 x-text="firstName"></h1>
+        <div
+          x-data="{
+            lastName:'mehra'
+        }"
+        >
+          <h1 x-text="firstName"></h1>
+          <h1 x-text="lastName"></h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

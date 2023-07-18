@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const types = [
+        {
+          value: "a",
+          label: "No Project page",
+        },
+        {
+          value: "b",
+          label: "All Projects",
+        },
+        {
+          value: "c",
+          label: "Rooms List",
+        },
+        {
+          value: "d",
+          label: "Room details",
+        },
+        {
+          value: "e",
+          label: "Room edit",
+        },
+      ];
+      const existingArrOftypes = ["a", "c"];
+      let abc = types;
+      existingArrOftypes.forEach((typ) => {
+        abc = abc.map((item) => {
+          if (typ === item.value) {
+            return {
+              ...item,
+              disabled: true,
+            };
+          }
+          return item;
+        });
+      });
+      console.log({ abc });
+    </script>
+  </head>
+  <body>
+    JS OBJECT
+  </body>
+</html>
